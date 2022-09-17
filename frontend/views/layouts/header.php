@@ -5,7 +5,6 @@ use yii\bootstrap4\ActiveForm;
 use yii\bootstrap4\Html;
 use yii\captcha\Captcha;
 $user = Yii::$app->user->identity;
-$categoryList = \common\models\Category::find()->all();
 $settings = \frontend\models\FrontendHelper::getSetting();
 $currUrl = Yii::$app->request->url;
 if ($currUrl[0] == '/'){
@@ -16,67 +15,36 @@ $model = new ContactForm;
 
 <div class="loader"></div>
 <header>
-    <div class="main-container">
-        <div class="header">
-            <a href="/" rel="nofollow"><img class="logo" src="/img/landing/header-logo.png" alt=""></a>
-
-            <nav id="burgerMenu" class="header-nav">
-                <li class="burger-block header-nav__item d-flex d-lg-none">
-                    <a href="/" rel="nofollow"><img class="logo d-block d-sm-none" src="/img/landing/header-logo.png" alt=""></a>
-                    <div class="burger burgerBtn">
-                        <img src="/img/burgerClose.png" alt="">
-                    </div>
+    <div class="container-fluid">
+        <nav class="header">
+            <a class="navbar-brand header-logo" href="#"><img src="/img/main/logo.svg" alt=""></a>
+            <ul class="burger-menu">
+                <p class="burger-close center">x</p>
+                <li class="nav-item active">
+                    <a class="nav-link" href="/history.html">О парке</a>
                 </li>
-                <li id="catalog-hover" class="header-nav__item">
-                    <a class="header-nav__link" href="/catalog/"><p class="header-nav__word">Каталог</p></a>
-                    <ul class="submenu submenu-catalog">
-                        <?foreach ($categoryList as $category):?>
-                            <li class="submenu-item"><a href="/<?=$category->alias;?>/" class="submenu-link" <?=$currUrl == $category->alias ? 'rel="nofollow"':'';?> ><?=$category->title;?></a></li>
-                        <?endforeach;?>
-                    </ul>
+                <li class="nav-item">
+                    <a class="nav-link" href="/tour.html">Туризм</a>
                 </li>
-                <li class="header-nav__item">
-                    <a class="header-nav__link" href="/#main-about" rel="nofollow"><p class="header-nav__word">О нас</p></a>
+                <li class="nav-item">
+                    <a class="nav-link" href="/flora.html">Наука - защита</a>
                 </li>
-                <li class="header-nav__item">
-                    <a class="header-nav__link" href="/#nomad-service" rel="nofollow"><p class="header-nav__word">Nomad</p></a>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Пресс - центер</a>
                 </li>
-                <li class="header-nav__item">
-                    <a class="header-nav__link" href="/service/" <?=$currUrl == 'service' ? 'rel="nofollow"':'';?>><p class="header-nav__word">Сервис</p></a>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Сотрудничество</a>
                 </li>
-                <li class="header-nav__item">
-                    <a class="header-nav__link" href="/certificates/" <?=$currUrl == 'certificates' ? 'rel="nofollow"':'';?>><p class="header-nav__word">Сертификаты</p></a>
+                <li class="nav-item">
+                    <a class="nav-link" href="/foto.html">Архив</a>
                 </li>
-                <li class="header-nav__item">
-                    <a class="header-nav__link" href="/contacts/" <?=$currUrl == 'contacts' ? 'rel="nofollow"':'';?>><p class="header-nav__word">Контакты</p></a>
-                </li>
-                <li class="header-nav__item header-nav__soc d-flex d-lg-none">
-                    <div class="header-soc__item">
-
-                        <a href="<?=$settings->instagram;?>" rel="nofollow"> <img src="/img/footer/inst.svg" alt=""></a>
-                    </div>
-                    <div class="header-soc__item">
-
-                        <a href="<?=$settings->whatsapp;?>" rel="nofollow"><img src="/img/footer/whatsapp.svg" alt=""></a>
-                    </div>
-                    <div class="header-soc__item">
-
-                        <a href="<?=$settings->facebook;?>" rel="nofollow"><img src="/img/footer/face.svg" alt=""></a>
-                    </div>
-                </li>
-            </nav>
-
-            <div class="header-contact">
-                <a id="phone" class="header-contact__block" href="tel:<?=str_replace(' ', '', $settings->getMainPhone());?>" rel="nofollow">
-                    <img src="/img/landing/header-contact.svg" alt="">
-                </a>
-                <lable class="d-none d-xl-block" from="phone"><a href="tel:<?=str_replace(' ', '', $settings->getMainPhone());?>" rel="nofollow"><?=$settings->getMainPhone();?></a></lable>
-                <a class="button-main button-header mx-3 d-none d-sm-block" href="#" rel="nofollow" data-toggle="modal" data-target="#contact-me">Оставить заявку</a>
-                <div class="burger burgerBtn d-flex d-lg-none">
-                    <img src="/img/header-burger.svg" alt="">
-                </div>
+            </ul>
+            <div class="d-flex align-items-center text-white">
+                <p>Eng</p>
+                <img class="mx-3" src="/img/main/search.svg" alt="">
+                <img id="burger" src="/img/main/menu.svg" alt="">
             </div>
-        </div>
+        </nav>
     </div>
 </header>
 
@@ -118,25 +86,4 @@ $model = new ContactForm;
             </div>
         </div>
     </div>
-</div>
-
-<div id="fixed-button">
-    <div class="top-circles" style="display: none">
-        <div class="circle whatsapp">
-            <a href="<?=$settings->whatsapp;?>"><img src="/img/whatsapp.svg" alt=""></a>
-        </div>
-        <div class="circle file">
-            <a href="#" rel="nofollow" data-toggle="modal" data-target="#contact-me"><img src="/img/file.svg" alt=""></a>
-        </div>
-        <div class="circle phone">
-            <a href="tel:<?=str_replace(' ', '', $settings->getMainPhone());?>"><img src="/img/landing/header-contact.svg" alt=""></a>
-        </div>
-    </div>
-    <div class="bottom-circle">
-        <div class="large-circle request">
-            <a href="#" rel="nofollow"><img src="/img/file.svg" alt=""></a>
-        </div>
-    </div>
-
-
 </div>
