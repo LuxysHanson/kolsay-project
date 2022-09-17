@@ -49,9 +49,9 @@ class SiteController extends Controller
     public function beforeAction($action)
     {
         if ($action->id == 'index'){
-            $this->title = 'Купить систему электронной очереди NOMAD от Bass Technology';
-            $this->keywords = 'Система электронной очереди';
-            $this->description = 'Электронная система управления очередью по индивидуальному проекту NOMAD SYSTEM ⏩ Свой сервис ✔️ Интеграция с CRM системами ⚡ Широкий спектр решений ☝ Перейти';
+            $this->title = 'Көлсай көлдері';
+            $this->keywords = 'Көлсай көлдері';
+            $this->description = 'Көлсай көлдері ⏩ Отдых ✔ ☝ Перейти';
         }else if($action->id == 'service'){
             $this->title = 'Сервисное обслуживания системы электронной очереди «NOMAD»';
             $this->keywords = 'Система электронной очереди, Nomad System';
