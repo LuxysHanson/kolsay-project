@@ -17,7 +17,7 @@ $model = new ContactForm;
 <header>
     <div class="container-fluid">
         <nav class="header">
-            <a class="navbar-brand header-logo" href="#"><img src="/img/main/logo.svg" alt=""></a>
+            <a class="navbar-brand header-logo" href="/"><img src="/img/main/logo.svg" alt=""></a>
             <ul class="burger-menu">
                 <p class="burger-close center">x</p>
                 <li class="nav-item active">
