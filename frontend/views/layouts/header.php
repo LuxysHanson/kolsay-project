@@ -30,7 +30,7 @@ $model = new ContactForm;
                     <a class="nav-link" href="/flora.html">Наука - защита</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Пресс - центер</a>
+                    <a class="nav-link" href="#">Пресс - центр</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Сотрудничество</a>

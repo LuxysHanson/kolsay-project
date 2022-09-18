@@ -19,7 +19,7 @@ $categoryList = \common\models\Category::find()->all();
                                     <p class="min-title ff-bold">Дата посещения</p>
                                     <p class="txt-18 txt-green-200 txt-violet-200">21.07.2022</p>
                                 </div>
-                                <img class="ml-0" src="/assets/main/main-calendar.svg" alt="">
+                                <img class="ml-0" src="/img/main/main-calendar.svg" alt="">
                             </div>
                         </div>
                         <ul class="col-12">
@@ -124,13 +124,13 @@ $categoryList = \common\models\Category::find()->all();
 
         <div class="row">
             <div class="col-12 col-md-3 text-center text-md-left mb-5">
-                <a class="navbar-brand header-logo" href="#"><img src="/assets/main/logo.png" alt=""></a>
+                <a class="navbar-brand header-logo" href="#"><img src="/img/main/logo.png" alt=""></a>
                 <p class="d-none d-md-block">Национальный парк <br> кольсай кольдеры</p>
                 <ul class="footer-soc">
-                    <li class="footer-soc-item circle center"><img src="/assets/footer/soc-inst.svg" alt=""></li>
-                    <li class="footer-soc-item circle center"><img src="/assets/footer/soc-teleg.svg" alt=""></li>
-                    <li class="footer-soc-item circle center"><img src="/assets/footer/soc-inst.svg" alt=""></li>
-                    <li class="footer-soc-item circle center"><img src="/assets/footer/soc-teleg.svg" alt=""></li>
+                    <li class="footer-soc-item circle center"><img src="/img/footer/soc-inst.svg" alt=""></li>
+                    <li class="footer-soc-item circle center"><img src="/img/footer/soc-teleg.svg" alt=""></li>
+                    <li class="footer-soc-item circle center"><img src="/img/footer/soc-inst.svg" alt=""></li>
+                    <li class="footer-soc-item circle center"><img src="/img/footer/soc-teleg.svg" alt=""></li>
                 </ul>
             </div>
             <div class="col-12 col-md-3 text-center text-md-left">
