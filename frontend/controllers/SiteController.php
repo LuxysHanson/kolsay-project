@@ -159,6 +159,12 @@ class SiteController extends Controller
 
     }
 
+    public function actionTourism(){
+        return $this->render('tour',[
+
+        ]);
+    }
+
     public function actionSitemapXml()
     {
         $sitemap = new Sitemap();

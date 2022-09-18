@@ -24,7 +24,7 @@ $model = new ContactForm;
                     <a class="nav-link" href="/site/about">О парке</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/tour.html">Туризм</a>
+                    <a class="nav-link" href="/site/tourism">Туризм</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="/flora.html">Наука - защита</a>
