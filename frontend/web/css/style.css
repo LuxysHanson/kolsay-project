@@ -1,7 +1,7 @@
 /* font */
 @font-face {
     font-family: "GilroyBold";
-    src: url("/font/Gilroy-Bold.ttf")
+    src: url("/font/gilroy-bold.ttf")
 }
 @font-face {
     font-family: "GilroyMedium";
@@ -9,7 +9,7 @@
 }
 @font-face {
     font-family: "GilroyRegular";
-    src: url("/font/Gilroy-Regular.ttf")
+    src: url("/font/gilroy-regular.ttf")
 }
 @font-face {
     font-family: "GilroyThinItalic";
