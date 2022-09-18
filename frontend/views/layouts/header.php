@@ -21,7 +21,7 @@ $model = new ContactForm;
             <ul class="burger-menu">
                 <p class="burger-close center">x</p>
                 <li class="nav-item active">
-                    <a class="nav-link" href="/history.html">О парке</a>
+                    <a class="nav-link" href="/site/about">О парке</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="/tour.html">Туризм</a>
