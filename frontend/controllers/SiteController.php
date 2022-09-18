@@ -126,6 +126,7 @@ class SiteController extends Controller
             'cityLists' => $cityLists,
             'specLists' => $specLists,
         ]);
+
     }
 
 
