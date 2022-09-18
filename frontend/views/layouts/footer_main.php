@@ -7,8 +7,7 @@ $categoryList = \common\models\Category::find()->all();
     <div class="container-fluid">
 
 
-        <?if(Yii::$app->controller->id == 'site' && Yii::$app->controller->action->id == 'index'):?>
-            <section class="section-ticket text-dark">
+        <section class="section-ticket text-dark">
             <div class="container-fluid">
                 <div class="ticket-block">
                     <div class="row">
@@ -120,7 +119,6 @@ $categoryList = \common\models\Category::find()->all();
                 </div>
             </div>
         </section>
-        <?endif;?>
 
         <div class="row">
             <div class="col-12 col-md-3 text-center text-md-left mb-5">

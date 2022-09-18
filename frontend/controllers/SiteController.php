@@ -152,6 +152,13 @@ class SiteController extends Controller
         ]);
     }
 
+    public function actionAbout(){
+        return $this->render('about',[
+
+        ]);
+
+    }
+
     public function actionSitemapXml()
     {
         $sitemap = new Sitemap();
