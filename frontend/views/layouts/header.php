@@ -17,7 +17,7 @@ $model = new ContactForm;
 <header>
     <div class="container-fluid">
         <nav class="header">
-            <a class="navbar-brand header-logo" href="/"><img src="/img/main/logo.svg" alt=""></a>
+            <a class="navbar-brand header-logo" href="/"><img class="logo-white" src="/img/main/logo.svg" alt=""> <img class="logo-dark" src="/img/main/logo-dark.svg" alt=""></a>
             <ul class="burger-menu">
                 <p class="burger-close center">x</p>
                 <li class="nav-item active">
@@ -39,10 +39,15 @@ $model = new ContactForm;
                     <a class="nav-link" href="/foto.html">Архив</a>
                 </li>
             </ul>
-            <div class="d-flex align-items-center text-white">
-                <p>Eng</p>
+            <div class="align-items-center text-white header-panel-1">
+                <p class="text-dark">Рус</p>
+                <img class="mx-3" src="/img/main/search-dark.svg" alt="">
+                <img class="burger" src="/img/main/menu-dark.svg" alt="">
+            </div>
+            <div class="align-items-center text-white header-panel-2">
+                <p class="text-white">Рус</p>
                 <img class="mx-3" src="/img/main/search.svg" alt="">
-                <img id="burger" src="/img/main/menu.svg" alt="">
+                <img class="burger" src="/img/main/menu.svg" alt="">
             </div>
         </nav>
     </div>

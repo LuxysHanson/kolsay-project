@@ -1,6 +1,7 @@
 
 const burgerMenu = document.querySelector('#burgerMenu');
-const burgerBtn = document.querySelectorAll('.burgerBtn');
+const burgerBtn = document.querySelector('.burger');
+const burgerClose = document.querySelector('.burger-close');
 const sidebarMenu = document.querySelector('.sidebar');
 const sidebarMenuLink = document.querySelectorAll('.header-nav__link');
 
@@ -13,9 +14,17 @@ sidebarMenuLink.forEach(e => {
         showBurger = true;
     })
 })
-burgerBtn.forEach(e => {
-    e.addEventListener('click', burgerMnuShow)
-})
+if (burger) {
+    burgerBtn.addEventListener('click', () => {
+        document.querySelector('.burger-menu').classList.add('show')
+        console.log('wertyuio');
+    })
+}
+if (burgerClose) {
+    burgerClose.addEventListener('click', () => {
+        document.querySelector('.burger-menu').classList.remove('show')
+    })
+}
 
 
 $('img').each(function(e){
@@ -25,8 +34,16 @@ $('img').each(function(e){
     }
 })
 
+$(window).on('load scroll', function() {
+    if ($(this).scrollTop() >= '900') {
+        $('header').addClass('header-dark');
+    } else {
+        $('header').removeClass();
+    }
+});
+
 function burgerMnuShow(){
-    console.log(1234)
+    console.log(12345)
     if(showBurger){
         burgerMenu.classList.add('active');
         showBurger = false;
