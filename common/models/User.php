@@ -109,7 +109,7 @@ class User extends ActiveRecord implements IdentityInterface
     public function save($runValidation = true, $attributeNames = null)
     {
         $this->username = $this->email;
-        if (self::isAccess(self::ROLE_ADMIN) && $this->isNewRecord && $this->tempPassword && strlen($this->tempPassword) > 6){
+        if ($this->isNewRecord && $this->tempPassword && strlen($this->tempPassword) > 6){
             $this->setPassword($this->tempPassword);
             $this->generateAuthKey();
             $this->generateEmailVerificationToken();
