@@ -27,16 +27,16 @@ $model = new ContactForm;
                     <a class="nav-link" href="/site/tourism">Туризм</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/flora.html">Наука - защита</a>
+                    <a class="nav-link" href="/site/about">Наука - защита</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Пресс - центр</a>
+                    <a class="nav-link" href="/news/press">Пресс - центр</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Сотрудничество</a>
+                    <a class="nav-link" href="/site/work">Сотрудничество</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/foto.html">Архив</a>
+                    <a class="nav-link" href="/site/foto">Архив</a>
                 </li>
             </ul>
             <div class="align-items-center text-white header-panel-1">

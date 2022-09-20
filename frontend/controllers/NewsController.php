@@ -15,6 +15,10 @@ class NewsController extends \yii\web\Controller
         ]);
     }
 
+    public function actionPress(){
+        return $this->render('press');
+    }
+
     public function actionView($id)
     {
         $models = News::findOne($id);

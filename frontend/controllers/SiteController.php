@@ -159,11 +159,36 @@ class SiteController extends Controller
 
     }
 
+    public function actionWork(){
+        return $this->render('work',[
+
+        ]);
+    }
+    public function actionFoto(){
+        return $this->render('foto',[
+
+        ]);
+    }
+    public function actionPhoto(){
+        return $this->render('foto_view',[
+
+        ]);
+    }
+
     public function actionTourism(){
         return $this->render('tour',[
 
         ]);
     }
+
+    public function actionFlora(){
+        return $this->render('flora',[
+
+        ]);
+    }
+
+
+
 
     public function actionSitemapXml()
     {

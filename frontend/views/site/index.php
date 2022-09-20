@@ -116,7 +116,7 @@ $this->registerJs($js);
                         </div>
                         <div class="path-link-map">
                             <div class="terms-map center" style="height: 100%;">
-                                <a class="terms-link" href="">
+                                <a class="terms-link" href="https://optimistic-perlman.194-110-54-222.plesk.page/">
                                     <img src="/img/terms/link.png" alt="">
                                 </a>
                             </div>
