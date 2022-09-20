@@ -14,7 +14,7 @@ sidebarMenuLink.forEach(e => {
         showBurger = true;
     })
 })
-if (burger) {
+if (burgerBtn) {
     burgerBtn.addEventListener('click', () => {
         document.querySelector('.burger-menu').classList.add('show')
         console.log('wertyuio');
