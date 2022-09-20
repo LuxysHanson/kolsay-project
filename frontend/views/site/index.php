@@ -4,6 +4,17 @@
 /* @var $products common\models\Products*/
 /* @var $items common\models\Items[]*/
 $settings = \frontend\models\FrontendHelper::getSetting();
+$js = <<<JS
+$(window).on('load scroll', function() {
+    if ($(this).scrollTop() >= '900') {
+        $('header').addClass('header-dark');
+    } else {
+        $('header').removeClass();
+    }
+});
+JS;
+$this->registerJs($js);
+
 ?>
 
 <main>

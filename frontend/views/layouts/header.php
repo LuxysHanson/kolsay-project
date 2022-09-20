@@ -14,7 +14,7 @@ $model = new ContactForm;
 ?>
 
 <div class="loader"></div>
-<header>
+<header class="header-dark">
     <div class="container-fluid">
         <nav class="header">
             <a class="navbar-brand header-logo" href="/"><img class="logo-white" src="/img/main/logo.svg" alt=""> <img class="logo-dark" src="/img/main/logo-dark.svg" alt=""></a>

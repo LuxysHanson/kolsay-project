@@ -34,13 +34,7 @@ $('img').each(function(e){
     }
 })
 
-$(window).on('load scroll', function() {
-    if ($(this).scrollTop() >= '900') {
-        $('header').addClass('header-dark');
-    } else {
-        $('header').removeClass();
-    }
-});
+
 
 function burgerMnuShow(){
     console.log(12345)
